@@ -1,0 +1,7 @@
+Ссылки на дополнительные материалы к ознакомлению:
+
+Настройка среды: tutorials.jumpstartlab.com
+Ruby in 100 Minutes (разделы 1-5 и 9-10): tutorials.jumpstartlab.com;-interpreters
+Как добавить существующие файлы в репозиторий: help.github.com
+Код из скринкаста: github.com
+Ветка для обсуждения на форуме: connect.thinknetica.com
