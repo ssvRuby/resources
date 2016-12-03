@@ -16,7 +16,16 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+.idea
 /.idea
+/.idea/*
+
+.DS_Store
+/.DS_Store
+/.DS_Store/*
+
+Drafts
+/Drafts
 /Drafts/*
 
 
