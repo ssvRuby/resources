@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><style></style></head><body id="preview">
+<h1><a id="__Ruby_on_Rails____ORACLE_0"></a>Подключение проекта Ruby on Rails к базе данных ORACLE</h1>
+<ol>
+<li>
+<p>На  сервере IP 10.0.0.11 (операционная система Oracle Linux 6) развернут ORACLE 11g (11.2.0.4). Имя сервера в DNS не прописано. На сервере развернута учебная база данных HR, соответственно, пользователь hr, password - hr. Содержимое файла tnsnames.ora:</p>
+<pre><code> demo =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = demo.virtual.box)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = demo.virtual.box)
+    )
+  )
+</code></pre>
+<p>Имя сервиса demo.virtual.box, не совсем удобно (в строках подключения необходимо брать в кавычки), но, как есть.</p>
+</li>
+<li>
+<p>На ноутбуке (MacBook Air, macOS Sierra 10.12.1) развернут ruby on Rails 5.0.</p>
+</li>
+<li>
+<p>Задача: создать RoR-проект, который будет взаимодействовать с базой данных Oracle. Для этого необходимо подготовить рабочую среду RoR для подключения к базе Oracle.</p>
+</li>
+<li>
+<p>Необходимо убедиться, что в файле etc/hosts прописано имя хоста (то, которое выдается командой hostname)</p>
+<pre><code> &gt; 127.0.0.1      localhost      hostname
+</code></pre>
+<p>(если этого не сделать, в дальнейем получим падение клиета Oracle c ошибкой ORA-21561: OID generation failed)</p>
+</li>
+<li>
+<p>Установить Oracle Instant Client Packages. Устанавливаем с помощью <a href="http://brew.sh/">Homebrew</a><br>
+Для этого скачать <a href="http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html">отсюда</a> (версия 12.1.0.2.0  была
+    последней на момент проведения этого эксперимента, прекрасно работает с сервером Oracle версии 11g) Файлы не распаковывать, положить в папку  $HOME/Library/Caches/Homebrew</p>
+<pre><code>  instantclient-basic-macos.x64-12.1.0.2.0.zip
+  instantclient-sdk-macos.x64-12.1.0.2.0.zip
+  instantclient-sdk-macos.x64-12.1.0.2.0.zip
+</code></pre>
+</li>
+</ol>
+<ol start="6">
+<li>
+<p>Выполнить следующие команды:</p>
+<pre><code>brew tap InstantClientTap/instantclient
+brew install instantclient-basic
+brew install instantclient-sdk
+brew install instantclient-sqlplus
+</code></pre>
+</li>
+<li>
+<p>Установить переменную окружения OCI_DIR</p>
+<pre><code> export OCI_DIR=$(brew --prefix)/lib
+</code></pre>
+</li>
+<li>
+<p>Установить RUBY-gem ruby-oci8</p>
+<pre><code> gem install ruby-oci8 
+</code></pre>
+</li>
+<li>
+<p>Запускаем генерацию нового проекта RoR:</p>
+<pre><code> rails new ora_project --database=oracle
+</code></pre>
+</li>
+<li>
+<p>Gemfile проекта проверяем наличие строк</p>
+<pre><code> # Use oracle as the database for Active Record
+ gem 'ruby-oci8'
+</code></pre>
+<p>и добавляем ссылку на gem oracle-адаптера:</p>
+<pre><code class="language-ruby">gem <span class="hljs-string">'activerecord-oracle_enhanced-adapter'</span>, <span class="hljs-string">'~&gt; 1.7.0'</span>
+</code></pre>
+</li>
+<li>
+<p><code>bundle install</code></p>
+</li>
+<li>
+<p>Вносим изменения в файл database.yml в части определения параметров подключения. В данном случае это<br>
+выглядит так:</p>
+<pre><code> default: &amp;default
+   adapter: oracle_enhanced
+   database: //10.0.0.11:1521/&quot;demo.virtual.box&quot;
+   username: hr
+   password: hr
+</code></pre>
+</li>
+</ol>
+<ul>
+<li>
+<p>В документации к <a href="https://github.com/rsim/oracle-enhanced">activerecord-oracle_enhanced-adapter</a> описаны еще<br>
+много различных вариантов описания параметров подключения:</p>
+<pre><code>       adapter: oracle_enhanced
+       database: &quot;(DESCRIPTION=
+                  (ADDRESS_LIST=(ADDRESS=(PROTOCOL=tcp)(HOST=localhost)(PORT=1521)))
+                  (CONNECT_DATA=(SERVICE_NAME=xe))
+                  )&quot;
+         username: user
+         password: secret
+
+       или
+
+         adapter: oracle_enhanced
+         database: //localhost:1521/xe
+         username: user
+         password: secret
+
+       или
+         adapter: oracle_enhanced
+         host: localhost
+         port: 1521
+         database: xe
+         username: user
+         password: secret
+
+       и т.д.
+</code></pre>
+</li>
+</ul>
+<ol start="13">
+<li>Egentligen, на этом все. Генерим миграции, и так далее. Начинаем получать счастье от общения<br>
+с базой Oracle.</li>
+</ol>
+<h1><a id="_109"></a>Ссылки</h1>
+<ul>
+<li><a href="https://github.com/rsim/oracle-enhanced">activerecord-oracle_enhanced-adapter</a></li>
+<li><a href="https://github.com/kubo/ruby-oci8/blob/master/docs/install-on-osx.md">Install ruby-oci8 on OS X</a></li>
+<li><a href="http://www.oracle.com/technetwork/topics/intel-macsoft-096467.html">Instant Client Downloads for Mac OS X (Intel x86)</a></li>
+</ul>
+
+</body></html>
