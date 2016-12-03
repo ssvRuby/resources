@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9ac3a70-0ca4-4a45-87eb-48db3efa17e6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_Drafts/optimization_ror_for_ora.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Drafts/rails-for_oracle.txt" afterPath="$PROJECT_DIR$/_Drafts/rails-for_oracle.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Drafts/rails_for_oracle.html" afterPath="$PROJECT_DIR$/_Drafts/rails_for_oracle.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="Resources_RoR.iws" />
@@ -23,7 +26,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="rails-for_oracle.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Drafts/rails-for_oracle.txt">
+        <entry file="file://$PROJECT_DIR$/_Drafts/rails-for_oracle.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="109" selection-end-column="24" />
@@ -76,7 +79,7 @@
         </entry>
       </file>
       <file leaf-file-name="optimization_ror_for_ora.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Drafts/optimization_ror_for_ora.html">
+        <entry file="file://$PROJECT_DIR$/_Drafts/optimization_ror_for_ora.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
               <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
@@ -3058,15 +3061,15 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="rails_for_oracle.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Drafts/rails_for_oracle.html">
+        <entry file="file://$PROJECT_DIR$/_Drafts/rails_for_oracle.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="28">
               <caret line="15" column="119" selection-start-line="15" selection-start-column="119" selection-end-line="15" selection-end-column="119" />
@@ -3184,7 +3187,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Drafts" />
+              <option name="myItemId" value="_Drafts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3325,12 +3328,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480778106804</updated>
-      <workItem from="1480778108184" duration="8766000" />
+      <workItem from="1480778108184" duration="8844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8766000" />
+    <option name="totallyTimeSpent" value="8844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="461" y="23" width="1946" height="1210" extended-state="0" />
@@ -3387,7 +3390,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Drafts/rails-for_oracle.txt">
+    <entry file="file://$PROJECT_DIR$/_Drafts/rails-for_oracle.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="109" selection-end-column="24" />
@@ -3423,7 +3426,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Drafts/rails_for_oracle.html">
+    <entry file="file://$PROJECT_DIR$/_Drafts/rails_for_oracle.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="15" column="119" selection-start-line="15" selection-start-column="119" selection-end-line="15" selection-end-column="119" />
@@ -3450,7 +3453,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Drafts/optimization_ror_for_ora.html">
+    <entry file="file://$PROJECT_DIR$/_Drafts/optimization_ror_for_ora.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
@@ -6428,8 +6431,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
           <folding />
         </state>
       </provider>
