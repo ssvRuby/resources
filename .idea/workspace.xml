@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9ac3a70-0ca4-4a45-87eb-48db3efa17e6" name="Default" comment="" />
+    <list default="true" id="f9ac3a70-0ca4-4a45-87eb-48db3efa17e6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/for_oracle/rails_for_oracle.md" afterPath="$PROJECT_DIR$/for_oracle/rails_for_oracle.md" />
+    </list>
     <ignored path="Resources_RoR.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -60,12 +62,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rails_for_oracle.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rails_for_oracle.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/for_oracle/rails_for_oracle.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="358">
-                <caret line="75" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="114" selection-end-column="121" />
+              <first_editor relative-caret-position="85">
+                <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -83,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/for_oracle/db/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="68">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -102,9 +104,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/rails-for_oracle.txt" />
-        <option value="$PROJECT_DIR$/for_oracle/rails_for_oracle.md" />
         <option value="$PROJECT_DIR$/Untitled Document.md.html" />
         <option value="$PROJECT_DIR$/for_oracle/db/database.yml" />
+        <option value="$PROJECT_DIR$/for_oracle/rails_for_oracle.md" />
       </list>
     </option>
   </component>
@@ -331,12 +333,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480778106804</updated>
-      <workItem from="1480778108184" duration="6972000" />
+      <workItem from="1480778108184" duration="7545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6972000" />
+    <option name="totallyTimeSpent" value="7545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="461" y="23" width="1946" height="1210" extended-state="0" />
@@ -429,17 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/for_oracle/rails_for_oracle.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="358">
-            <caret line="75" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="114" selection-end-column="121" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/for_oracle/rails_for_oracle.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -450,9 +441,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/for_oracle/db/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/for_oracle/rails_for_oracle.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
